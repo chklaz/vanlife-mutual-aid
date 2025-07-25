@@ -18,6 +18,12 @@
       padding: 1.5rem;
       text-align: center;
     }
+    header img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
     section {
       padding: 2rem;
       max-width: 800px;
@@ -46,18 +52,22 @@
       background-color: #eee;
       color: #555;
     }
+    code {
+      word-break: break-all;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Vanlife Mutual Aid Fund</h1>
     <p>Decentralized support for nomads — powered by Bitcoin</p>
+    <img src="A_flat-style_digital_illustration_in_the_header_im.png" alt="Vanlifers contributing to Bitcoin pot">
   </header>
 
   <section>
     <div class="card">
       <h2>What Is This?</h2>
-      <p>We’re building a mutual aid network for vanlifers: a shared emergency fund to help each other stay on the road. Small monthly contributions from each member grow over time, and can be used when someone in the group needs support.</p>
+      <p>We’re building a mutual aid network for vanlifers: a shared emergency fund to help each other surviv on the road. Small monthly contributions from each member grow over time, and can be used when someone in the group needs support.</p>
       <div class="example">
         <strong>Example:</strong> 10 members contribute $10/month (about 20,000 sats). That builds a $1,200 yearly fund to help cover breakdowns, urgent travel, or health costs.
       </div>
@@ -91,7 +101,16 @@
       <h2>Transparency & Accountability</h2>
       <p>Every transaction can be publicly verified on the Bitcoin blockchain — anyone in the group can see when and where funds move. We also keep a simple shared log of all decisions, proposals, and votes. It’s all open and auditable by the community.</p>
       <div class="example">
-        <strong>Example:</strong> View wallet activity at <code>mempool.space</code> using our fund address. See a log of past votes and approvals in a shared Google Doc or Notion board.
+        <strong>Example:</strong> View wallet activity at <a href="https://mempool.space/address/bc1q9e9z6y69ps9d5quugrm69yyzrnnvquv2l4y8q4" target="_blank">mempool.space</a> using our example address: <code>bc1q9e9z6y69ps9d5quugrm69yyzrnnvquv2l4y8q4</code>.
+        <br>See a log of past votes and approvals in a shared Google Doc or Notion board.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>How Mutual Aid Grows Over Time</h2>
+      <p>As members contribute monthly and the Bitcoin price increases, the fund gains value even without more members. This allows the group to support larger or more frequent requests over time.</p>
+      <div class="example">
+        <strong>Example:</strong> In Year 1, the group helps one member with $500. By Year 3, the same monthly contributions plus BTC appreciation allow for three separate $500 claims per year without draining the fund.
       </div>
     </div>
 
