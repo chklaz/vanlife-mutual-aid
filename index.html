@@ -18,33 +18,33 @@
       padding: 1.5rem;
       text-align: center;
     }
+    nav {
+      background-color: #333;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     header img {
       max-width: 100%;
       height: auto;
       margin-top: 1rem;
       border-radius: 8px;
     }
-    nav {
-      background-color: #444;
-      padding: 0.6rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav a {
-      color: white;
-      margin: 0 0.8rem;
-      text-decoration: none;
-      font-size: 0.98rem;
-    }
-    nav a:hover { text-decoration: underline; }
     section {
       padding: 2rem;
       max-width: 800px;
       margin: auto;
     }
-    h2 { color: #222; }
+    h2 {
+      color: #222;
+    }
     .card {
       background-color: white;
       padding: 1.5rem;
@@ -69,9 +69,9 @@
       border-radius: 8px;
     }
     .freefood-img {
-      max-width: 500px; /* Limit to 500px wide */
-      width: 100%;      /* Scale for smaller screens */
-      height: auto;     /* Keep aspect ratio */
+      max-width: 500px;
+      width: 100%;
+      height: auto;
       border-radius: 8px;
     }
     footer {
@@ -80,7 +80,9 @@
       background-color: #eee;
       color: #555;
     }
-    code { word-break: break-all; }
+    code {
+      word-break: break-all;
+    }
   </style>
 </head>
 <body>
@@ -94,34 +96,19 @@
     <a href="#what-is-mutual-aid">What is Mutual Aid?</a>
     <a href="#van-breakdown-fund">Van Breakdown Fund</a>
     <a href="#land-fund">Land Fund</a>
-    <a href="#what-is-this">Overview</a>
-    <a href="#why-bitcoin">Why Bitcoin</a>
-    <a href="#multisig">Multisig</a>
-    <a href="#claims">Claims</a>
-    <a href="#transparency">Transparency</a>
-    <a href="#growth">Growth Over Time</a>
-    <a href="#interested">Get Involved</a>
+    <a href="#connect-with-us">Connect With Us</a>
   </nav>
 
   <section id="what-is-mutual-aid">
     <div class="card">
       <h2>What is Mutual Aid?</h2>
-      <p>
-        Mutual aid is people supporting each other directly — no middlemen, no bureaucracy. 
-        We pool small resources to meet shared needs quickly and transparently.
-        It’s been around for centuries and shows up today as community bail funds, food banks, 
-        community fridges, repair circles, and co-ops. Historically, Black mutual aid societies,
-        labor union benefit funds, and friendly societies did this long before modern safety nets existed.
-        Learn more on <a href="https://en.wikipedia.org/wiki/Mutual_aid" target="_blank">Wikipedia</a>.
-      </p>
+      <p>Mutual aid is when communities voluntarily help each other meet needs, without hierarchy or profit. It’s about solidarity, not charity. Historically, mutual aid societies were the backbone of community support before government programs like Social Security or Medicare existed.</p>
+      <p>Learn more from the <a href="https://en.wikipedia.org/wiki/Mutual_aid" target="_blank">Mutual Aid Wikipedia page</a>.</p>
       <div class="image-container">
         <img src="freefood.jpeg" alt="Community fridge stocked with free food" class="freefood-img">
         <p style="font-size:0.9rem; color:#555;">
           A community fridge — a modern example of mutual aid, where neighbors share free food for anyone in need.
         </p>
-      </div>
-      <div class="example">
-        <strong>Examples:</strong> Community bail funds, food banks & fridges, neighborhood tool/repair circles, co-ops, historical lodge & friendly societies, union emergency funds.
       </div>
     </div>
   </section>
@@ -129,11 +116,9 @@
   <section id="van-breakdown-fund">
     <div class="card">
       <h2>Van Breakdown Fund</h2>
-      <p>
-        A dedicated emergency pot for major repairs — transmissions, engines, tires — to keep members moving. Requests are reviewed by the group; if approved, the funds go out fast so no one is stranded.
-      </p>
+      <p>This fund helps members cover urgent repairs to keep them safely on the road. Whether it’s a transmission failure, engine trouble, or replacing a critical part, the Van Breakdown Fund ensures no one is stranded without help.</p>
       <div class="example">
-        <strong>Example:</strong> A member blows a transmission in a remote area. The group approves $1,000 from the fund and the repair gets handled within days.
+        <strong>Example:</strong> Jamie’s alternator fails in the middle of a road trip. The fund covers the $450 repair, and Jamie is back on the road the next day.
       </div>
     </div>
   </section>
@@ -141,90 +126,23 @@
   <section id="land-fund">
     <div class="card">
       <h2>Land Fund</h2>
-      <p>
-        A pooled investment to buy land together — for shared camping, events, food production, and long-term security. Members contribute regularly; the land becomes a shared asset managed by the group under clear rules.
-      </p>
+      <p>The Land Fund is for pooling resources to acquire land for shared use — a home base for members, a safe place to park, host gatherings, and build community projects. Contributions grow over time and are used toward purchase, maintenance, and improvements.</p>
       <div class="example">
-        <strong>Example:</strong> Over five years, contributions and appreciation enable the group to buy a multi-acre property that hosts gatherings, offers seasonal camping, and serves as a safe base.
+        <strong>Example:</strong> The group pools funds for 3 years and buys a few acres near a national forest. Members can camp there for free and host seasonal meetups.
       </div>
     </div>
   </section>
 
-  <section id="what-is-this">
+  <section id="connect-with-us">
     <div class="card">
-      <h2>What Is This?</h2>
-      <p>We’re building a mutual aid network for vanlifers: a shared emergency fund to help each other survive and thrive on the road. Small monthly contributions from each member grow over time, and can be used when someone in the group needs support.</p>
-      <div class="example">
-        <strong>Example:</strong> 10 members contribute $10/month (about 20,000 sats). That builds a $1,200 yearly fund to help cover breakdowns, urgent travel, or health costs.
-      </div>
-    </div>
-  </section>
-
-  <section id="why-bitcoin">
-    <div class="card">
-      <h2>Why Bitcoin?</h2>
-      <p>Bitcoin is decentralized digital money — no banks, no middlemen, and it can’t be inflated away. It’s ideal for nomads: portable, secure, and accessible anywhere. We store the fund in Bitcoin so it can grow and remain sovereign.</p>
-      <div class="example">
-        <strong>Example:</strong> If the Bitcoin price rises, our shared fund grows too — without needing extra contributions. 1,000,000 sats saved at $30k/Bitcoin is $300. If BTC hits $60k, it's $600.
-      </div>
-    </div>
-  </section>
-
-  <section id="multisig">
-    <div class="card">
-      <h2>How Multisig Works</h2>
-      <p>The fund is held in a <strong>multisig wallet</strong>: a shared vault that needs multiple people to approve a withdrawal. Think of it like a safe that takes 3 out of 5 keys to open. No one can spend the funds alone — decisions are made together.</p>
-      <div class="example">
-        <strong>Example:</strong> 5 trusted members hold keys. Any 3 must agree to release funds. This ensures security without central control.
-      </div>
-      <div class="image-container">
-        <img src="multisig.png" alt="Multisig diagram illustration">
-      </div>
-    </div>
-  </section>
-
-  <section id="claims">
-    <div class="card">
-      <h2>How Claims Work</h2>
-      <p>If someone needs help, they submit a simple request explaining their situation. The group discusses and, if enough signers approve (e.g. 3 out of 5), the funds are sent. It’s fast, fair, and based on community trust.</p>
-      <div class="example">
-        <strong>Example:</strong> Alex’s van breaks down in the desert. They message the group, share a repair quote, and 3 signers approve $400 in aid. Funds are released the same day.
-      </div>
-    </div>
-  </section>
-
-  <section id="transparency">
-    <div class="card">
-      <h2>Transparency & Accountability</h2>
-      <p>Every transaction can be publicly verified on the Bitcoin blockchain — anyone in the group can see when and where funds move. We also keep a simple shared log of all decisions, proposals, and votes. It’s all open and auditable by the community.</p>
-      <div class="example">
-        <strong>Live Demo Address:</strong>
-        View wallet activity at
-        <a href="https://mempool.space/address/bc1qxgz8q65rvfk9xp87xf8mlmlg5rrnswsaz8uszz" target="_blank">mempool.space</a>
-        using our current demo wallet:
-        <code>bc1qxgz8q65rvfk9xp87xf8mlmlg5rrnswsaz8uszz</code>.<br>
-        See a log of past votes and approvals in a shared Google Doc or Notion board.
-      </div>
-    </div>
-  </section>
-
-  <section id="growth">
-    <div class="card">
-      <h2>How Mutual Aid Grows Over Time</h2>
-      <p>As members contribute monthly and the Bitcoin price increases, the fund gains value even without more members. This allows the group to support larger or more frequent requests over time.</p>
-      <div class="example">
-        <strong>Example:</strong> In Year 1, the group helps one member with $500. By Year 3, the same monthly contributions plus BTC appreciation allow for three separate $500 claims per year without draining the fund.
-      </div>
-      <div class="image-container">
-        <img src="mutual_aid_example.png" alt="Chart showing Bitcoin mutual aid fund growth over time">
-      </div>
-    </div>
-  </section>
-
-  <section id="interested">
-    <div class="card">
-      <h2>Interested?</h2>
-      <p>If this resonates with you — whether you’re new to Bitcoin or already orange-pilled — come chat with us. We’re starting small and building trust-first. Let’s build the safety net we all wish existed.</p>
+      <h2>Connect With Us</h2>
+      <p>Want to get involved, ask questions, or request aid? Join our online community space where members connect, share resources, and approve requests.</p>
+      <ul>
+        <li><strong>Discord:</strong> <a href="https://discord.gg/B3eufWhU" target="_blank">Join our Discord server</a></li>
+        <li><strong>Signal:</strong> Private invite available from any current member (best for encrypted discussions).</li>
+        <li><strong>Nostr:</strong> Coming soon — follow our public updates on a decentralized, censorship-resistant network.</li>
+      </ul>
+      <p>We encourage open discussion, transparency, and a spirit of helping each other on the road.</p>
     </div>
   </section>
 
