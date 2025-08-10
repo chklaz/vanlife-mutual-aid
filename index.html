@@ -76,6 +76,14 @@
     }
     code { word-break: break-all; }
   </style>
+  /* ...existing styles... */
+  .freefood-img {
+    max-width: 500px; /* Limit to 500px wide */
+    width: 100%;      /* Scale down on smaller screens */
+    height: auto;     /* Keep correct aspect ratio */
+    border-radius: 8px;
+  }
+</style>
 </head>
 <body>
   <header>
@@ -109,9 +117,11 @@
         Learn more on <a href="https://en.wikipedia.org/wiki/Mutual_aid" target="_blank">Wikipedia</a>.
       </p>
       <div class="image-container">
-        <img src="freefood.jpeg" alt="Community fridge stocked with free food">
-        <p style="font-size:0.9rem; color:#555;">A community fridge — a modern example of mutual aid, where neighbors share free food for anyone in need.</p>
-      </div>
+  <img src="freefood.jpeg" alt="Community fridge stocked with free food" class="freefood-img">
+  <p style="font-size:0.9rem; color:#555;">
+    A community fridge — a modern example of mutual aid, where neighbors share free food for anyone in need.
+   </p>
+</div>
       <div class="example">
         <strong>Examples:</strong> Community bail funds, food banks & fridges, neighborhood tool/repair circles, co-ops, historical lodge & friendly societies, union emergency funds.
       </div>
