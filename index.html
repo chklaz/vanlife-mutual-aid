@@ -24,14 +24,27 @@
       margin-top: 1rem;
       border-radius: 8px;
     }
+    nav {
+      background-color: #444;
+      padding: 0.6rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      margin: 0 0.8rem;
+      text-decoration: none;
+      font-size: 0.98rem;
+    }
+    nav a:hover { text-decoration: underline; }
     section {
       padding: 2rem;
       max-width: 800px;
       margin: auto;
     }
-    h2 {
-      color: #222;
-    }
+    h2 { color: #222; }
     .card {
       background-color: white;
       padding: 1.5rem;
@@ -61,19 +74,70 @@
       background-color: #eee;
       color: #555;
     }
-    code {
-      word-break: break-all;
-    }
+    code { word-break: break-all; }
   </style>
 </head>
 <body>
   <header>
     <h1>Vanlife Mutual Aid Fund</h1>
     <p>Decentralized support for nomads — powered by Bitcoin</p>
-    <img src="vanlife_bitcoin_2.png" alt="Vanlifers contributing to Bitcoin pot">
+    <img src="A_flat-style_digital_illustration_depicts_four_van.png" alt="Vanlifers contributing to Bitcoin pot">
   </header>
 
-  <section>
+  <nav>
+    <a href="#what-is-mutual-aid">What is Mutual Aid?</a>
+    <a href="#van-breakdown-fund">Van Breakdown Fund</a>
+    <a href="#land-fund">Land Fund</a>
+    <a href="#what-is-this">Overview</a>
+    <a href="#why-bitcoin">Why Bitcoin</a>
+    <a href="#multisig">Multisig</a>
+    <a href="#claims">Claims</a>
+    <a href="#transparency">Transparency</a>
+    <a href="#growth">Growth Over Time</a>
+    <a href="#interested">Get Involved</a>
+  </nav>
+
+  <!-- New sections first (so you can link them easily), then core explainer -->
+  <section id="what-is-mutual-aid">
+    <div class="card">
+      <h2>What is Mutual Aid?</h2>
+      <p>
+        Mutual aid is people supporting each other directly — no middlemen, no bureaucracy. We pool small resources to meet shared needs quickly and transparently.
+        It’s been around for centuries and shows up today as community bail funds, food banks, community fridges, repair circles, and co-ops. Historically, Black mutual aid societies,
+        labor union benefit funds, and friendly societies did this long before modern safety nets existed.
+      </p>
+      <div class="example">
+        <strong>Examples:</strong> Community bail funds, food banks & fridges, neighborhood tool/repair circles, co-ops, historical lodge & friendly societies, union emergency funds.
+      </div>
+    </div>
+  </section>
+
+  <section id="van-breakdown-fund">
+    <div class="card">
+      <h2>Van Breakdown Fund</h2>
+      <p>
+        A dedicated emergency pot for major repairs — transmissions, engines, tires — to keep members moving. Requests are reviewed by the group; if approved, the funds go out fast so no one is stranded.
+      </p>
+      <div class="example">
+        <strong>Example:</strong> A member blows a transmission in a remote area. The group approves $1,000 from the fund and the repair gets handled within days.
+      </div>
+    </div>
+  </section>
+
+  <section id="land-fund">
+    <div class="card">
+      <h2>Land Fund</h2>
+      <p>
+        A pooled investment to buy land together — for shared camping, events, food production, and long-term security. Members contribute regularly; the land becomes a shared asset managed by the group under clear rules.
+      </p>
+      <div class="example">
+        <strong>Example:</strong> Over five years, contributions and appreciation enable the group to buy a multi-acre property that hosts gatherings, offers seasonal camping, and serves as a safe base.
+      </div>
+    </div>
+  </section>
+
+  <!-- Core explainer content -->
+  <section id="what-is-this">
     <div class="card">
       <h2>What Is This?</h2>
       <p>We’re building a mutual aid network for vanlifers: a shared emergency fund to help each other survive and thrive on the road. Small monthly contributions from each member grow over time, and can be used when someone in the group needs support.</p>
@@ -81,7 +145,9 @@
         <strong>Example:</strong> 10 members contribute $10/month (about 20,000 sats). That builds a $1,200 yearly fund to help cover breakdowns, urgent travel, or health costs.
       </div>
     </div>
+  </section>
 
+  <section id="why-bitcoin">
     <div class="card">
       <h2>Why Bitcoin?</h2>
       <p>Bitcoin is decentralized digital money — no banks, no middlemen, and it can’t be inflated away. It’s ideal for nomads: portable, secure, and accessible anywhere. We store the fund in Bitcoin so it can grow and remain sovereign.</p>
@@ -89,7 +155,9 @@
         <strong>Example:</strong> If the Bitcoin price rises, our shared fund grows too — without needing extra contributions. 1,000,000 sats saved at $30k/Bitcoin is $300. If BTC hits $60k, it's $600.
       </div>
     </div>
+  </section>
 
+  <section id="multisig">
     <div class="card">
       <h2>How Multisig Works</h2>
       <p>The fund is held in a <strong>multisig wallet</strong>: a shared vault that needs multiple people to approve a withdrawal. Think of it like a safe that takes 3 out of 5 keys to open. No one can spend the funds alone — decisions are made together.</p>
@@ -100,24 +168,34 @@
         <img src="multisig.png" alt="Multisig diagram illustration">
       </div>
     </div>
+  </section>
 
+  <section id="claims">
     <div class="card">
       <h2>How Claims Work</h2>
       <p>If someone needs help, they submit a simple request explaining their situation. The group discusses and, if enough signers approve (e.g. 3 out of 5), the funds are sent. It’s fast, fair, and based on community trust.</p>
       <div class="example">
-        <strong>Example:</strong> Alex’s van breaks down in the desert. He messages the group, shares a repair quote, and 3 signers approve $400 in aid. Funds are released the same day.
+        <strong>Example:</strong> Alex’s van breaks down in the desert. They message the group, share a repair quote, and 3 signers approve $400 in aid. Funds are released the same day.
       </div>
     </div>
+  </section>
 
+  <section id="transparency">
     <div class="card">
       <h2>Transparency & Accountability</h2>
       <p>Every transaction can be publicly verified on the Bitcoin blockchain — anyone in the group can see when and where funds move. We also keep a simple shared log of all decisions, proposals, and votes. It’s all open and auditable by the community.</p>
       <div class="example">
-        <strong>Example:</strong> View wallet activity at <a href="https://mempool.space/address/bc1qxgz8q65rvfk9xp87xf8mlmlg5rrnswsaz8uszz" target="_blank">mempool.space</a> using our current demo wallet: <code>bc1qxgz8q65rvfk9xp87xf8mlmlg5rrnswsaz8uszz</code>.<br>
+        <strong>Live Demo Address:</strong>
+        View wallet activity at
+        <a href="https://mempool.space/address/bc1qxgz8q65rvfk9xp87xf8mlmlg5rrnswsaz8uszz" target="_blank">mempool.space</a>
+        using our current demo wallet:
+        <code>bc1qxgz8q65rvfk9xp87xf8mlmlg5rrnswsaz8uszz</code>.<br>
         See a log of past votes and approvals in a shared Google Doc or Notion board.
       </div>
     </div>
+  </section>
 
+  <section id="growth">
     <div class="card">
       <h2>How Mutual Aid Grows Over Time</h2>
       <p>As members contribute monthly and the Bitcoin price increases, the fund gains value even without more members. This allows the group to support larger or more frequent requests over time.</p>
@@ -128,7 +206,9 @@
         <img src="mutual_aid_example.png" alt="Chart showing Bitcoin mutual aid fund growth over time">
       </div>
     </div>
+  </section>
 
+  <section id="interested">
     <div class="card">
       <h2>Interested?</h2>
       <p>If this resonates with you — whether you’re new to Bitcoin or already orange-pilled — come chat with us. We’re starting small and building trust-first. Let’s build the safety net we all wish existed.</p>
@@ -136,8 +216,7 @@
   </section>
 
   <footer>
-    <p>Built by vanlifers, for vanlifers — 2025</p>
-    <p>Questions? Email Chuck - chklaz at gmail dot com</p>
+    <p>Built by vanlifers, for vanlifers. Powered by freedom and sats — 2025.</p>
   </footer>
 </body>
 </html>
